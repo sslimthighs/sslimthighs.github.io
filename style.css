@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.bgImage {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.container {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.container h2 {
+    margin: 0;
+    font-size: 13em;
+    color: #ffffff;
+    text-shadow: 1.25px 1.25px 5px rgba(0, 0, 0, 0.8);
+}
+
+.content {
+    margin: 0;
+    position: absolute;
+    top: 200px;
+    transform: translate(-50%, -60%);
+    height: 400px;
+    width: 800px;
+}
+
+#login-form input, #todo-form input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    outline: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 7px 0;
+    background: transparent;
+}
+
+#login-form input::placeholder, #todo-form input::placeholder {
+    color: #ffffff;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.8);
+}
+
+#login-form button {
+    display: none;
+}
+
+#greeting {
+    color: #ffffff;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.8);
+}
+
+#todo-list {
+    list-style: none;
+}
+
+#todo-list li {
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#todo-list button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: center;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.8);
+}
+
+#weather {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.8);
+}
+
+#quote {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.8);
+}
+
+#quote span:last-child{
+    display: block;
+    margin-top: 1rem;
+}
